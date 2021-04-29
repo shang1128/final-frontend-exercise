@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  width: 70vw;
+  height: auto;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.links__nav--links {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+.links__nav--links li {
+  list-style-type: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=page7.css.map */
