@@ -1,0 +1,110 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.foot-sec1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+
+.foot-sec1-fticons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.foot-sec1-fticons-fb {
+  margin-right: 40px;
+  color: blue;
+}
+.foot-sec1-fticons-twit {
+  color: skyblue;
+}
+
+.foot-sec1-rakuinfo {
+  width: 30%;
+}
+.foot-sec1-rakuinfo-h3 {
+  color: lightgray;
+  font-weight: bolder;
+}
+.foot-sec1-rakuinfo-p {
+  margin: 25px 0;
+}
+
+.foot-sec1-follow {
+  width: 30%;
+  padding: 16px 0;
+}
+.foot-sec1-follow-p {
+  margin: 14px 0 30px 0;
+}
+
+.foot-sec1-contact {
+  width: 30%;
+  padding: 16px 0;
+}
+.foot-sec1-contact-p {
+  margin: 12px 0;
+}
+.foot-sec1-contact-p span {
+  display: block;
+}
+
+.foot-sec2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px 0;
+}
+.foot-sec2-information h5 {
+  margin-bottom: 15px;
+}
+.foot-sec2-information p {
+  margin: 8px 0;
+}
+.foot-sec2-services h5 {
+  margin-bottom: 15px;
+}
+.foot-sec2-services p {
+  margin: 8px 0;
+}
+.foot-sec2-extras h5 {
+  margin-bottom: 15px;
+}
+.foot-sec2-extras p {
+  margin: 8px 0;
+}
+.foot-sec2-myaccount h5 {
+  margin-bottom: 15px;
+}
+.foot-sec2-myaccount p {
+  margin: 8px 0;
+}
+.foot-sec2-usefullinks h5 {
+  margin-bottom: 15px;
+}
+.foot-sec2-usefullinks p {
+  margin: 8px 0;
+}
+.foot-sec2-ouroffers h5 {
+  margin-bottom: 15px;
+}
+.foot-sec2-ouroffers p {
+  margin: 8px 0;
+}/*# sourceMappingURL=page6.css.map */
