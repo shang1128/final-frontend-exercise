@@ -99,8 +99,8 @@
 
 .banner{
     height:90vh;
-    background: transparent linear-gradient(63deg, var(--unnamed-color-ff4858) 0%, var(--unnamed-color-8f65ff) 100%) 0% 0% no-repeat padding-box;
-    background: transparent linear-gradient(63deg, #FF4858 0%, #8F65FF 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(63deg, var(--unnamed-color-ff4858) 0%, var(--unnamed-color-8f65ff) 100%) 0% 0% no-repeat padding-box!important;
+    background: transparent linear-gradient(63deg, #FF4858 0%, #8F65FF 100%) 0% 0% no-repeat padding-box!important;
     opacity: 1;
     position: relative;
     margin:0 0 40vh 0;
