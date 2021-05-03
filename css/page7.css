@@ -90,6 +90,9 @@
   color: #FD2E2E;
 }
 
+.links {
+  margin: 0 0 10vh 0;
+}
 .links__nav--links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -111,4 +114,142 @@
 }
 .links__nav--links li a:hover, .links__nav--links li a:active {
   color: #33A0FF;
-}/*# sourceMappingURL=page7.css.map */
+
+}
+}
+
+.banner {
+  height: 90vh;
+  background: transparent linear-gradient(63deg, var(--unnamed-color-ff4858) 0%, var(--unnamed-color-8f65ff) 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(63deg, #FF4858 0%, #8F65FF 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+  position: relative;
+  margin: 0 0 40vh 0;
+}
+.banner__flag {
+  position: relative;
+  height: 100%;
+  width: 75vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.banner__flag .flag__text, .banner__flag .flag__pic {
+  color: white;
+}
+.banner__flag i {
+  flex: 2;
+}
+.banner__flag i:nth-child(4) {
+  display: flex;
+  justify-content: flex-end;
+}
+.banner__flag .flag__text {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 100%;
+}
+.banner__flag .flag__text h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+.banner__flag .flag__text span {
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+.banner__flag .flag__text a {
+  color: white;
+}
+.banner__flag .flag__pic {
+  flex: 4;
+}
+.banner__flag .flag__pic img {
+  width: 40vw;
+}
+.banner__mini {
+  display: flex;
+  position: relative;
+  top: -10vh;
+  width: 70vw;
+  margin: auto;
+}
+.banner__mini h1 {
+  font-size: 24px;
+}
+.banner__mini span {
+  font-size: 12px;
+  line-height: 1.5rem;
+}
+.banner__mini .item-1, .banner__mini .item-2, .banner__mini .item-3 {
+  flex: 4;
+  padding: 25px;
+  height: 280px;
+  width: 390px;
+}
+.banner__mini .item-1 {
+  background-color: #FF6875;
+  color: white;
+  overflow: hidden;
+  display: flex;
+}
+.banner__mini .item-1__text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.banner__mini .item-1__text span {
+  width: 70%;
+}
+.banner__mini .item-1__text h1:nth-child(3) {
+  opacity: 75%;
+}
+.banner__mini .item-1__pic img {
+  position: relative;
+  object-fit: cover;
+  max-width: 316px;
+  max-height: 538px;
+  right: -40px;
+}
+.banner__mini .item-2 {
+  position: relative;
+  background-color: #F6F7F8;
+}
+.banner__mini .item-2__pic {
+  position: absolute;
+  top: -50px;
+}
+.banner__mini .item-2__pic img {
+  object-fit: cover;
+  max-height: 322px;
+  max-width: 322px;
+}
+.banner__mini .item-2__text {
+  position: relative;
+  bottom: -200px;
+  display: flex;
+  justify-content: space-between;
+}
+.banner__mini .item-3 {
+  background-color: #C1C8CE;
+  display: flex;
+  gap: 2rem;
+}
+.banner__mini .item-3__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 50%;
+}
+.banner__mini .item-3__pic {
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  bottom: 50px;
+  right: 50px;
+}
+
