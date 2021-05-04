@@ -82,7 +82,7 @@
             li{
                 list-style-type: none;
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: bolder;
                 font-size:14px;
                 a{
                     color:black;
@@ -138,7 +138,14 @@
                 line-height: 1.5rem;
             }
             a{
+                text-decoration: none;
                 color:white;
+                width:45px;
+                padding-bottom:5px;
+            }
+            a:hover{
+                margin-bottom: -3px;
+                border-bottom: 3px solid white;
             }
         }
         .flag__pic{
