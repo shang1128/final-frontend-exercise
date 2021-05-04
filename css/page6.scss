@@ -142,6 +142,11 @@
     }
 
 }
+.foot-sec3{
+    margin: 20px 0 20px auto;
+    display: block;
+    width: 180px;
+}
 .header{
     display:flex;
     justify-content: space-between;
@@ -358,7 +363,7 @@
     width: 330px;
     height: 126px;
 
-    &--content{
+       &--content{
         margin: 24px 10px;
 
         &--date{
@@ -373,5 +378,29 @@
             line-height: 1.2;
             font-size: 10pt;
         }
+    }
+}
+.input-search{
+    display: flex;
+    justify-content: center;
+    margin: 150px 0;
+
+    &--inputs{
+        background-color: transparent;
+        border: 1px solid lightgray;
+        width: 500px;
+        padding-left: 20px;
+        margin-right: 10px;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    &--butn{
+        background-color:#33A0FF;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 25px 40px;
     }
 }
