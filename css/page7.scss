@@ -82,7 +82,7 @@
             li{
                 list-style-type: none;
                 text-transform: uppercase;
-                font-weight: 600;
+                font-weight: bolder;
                 font-size:14px;
                 a{
                     color:black;
@@ -138,7 +138,14 @@
                 line-height: 1.5rem;
             }
             a{
+                text-decoration: none;
                 color:white;
+                width:45px;
+                padding-bottom:5px;
+            }
+            a:hover{
+                margin-bottom: -3px;
+                border-bottom: 3px solid white;
             }
         }
         .flag__pic{
@@ -154,6 +161,7 @@
         top:-10vh;
         width:70vw;
         margin:auto;
+        flex-wrap: wrap;
         h1{
             font-size:24px;
         }
@@ -230,6 +238,65 @@
                 bottom:50px;
                 right: 50px;
             }
+        }
+    }
+}
+
+.banner-2{
+    height:600px;
+    background-color: #2E90E5;
+    display: flex;
+    justify-content: center;
+    margin:10vh 0;
+    &__flag{
+        width:70vw;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        gap:3rem;
+        &__text{
+            display:flex;
+            flex-direction: column;
+            gap:4rem;
+            span{
+                font-size:66px;
+                font-weight:100;
+            }
+            span:nth-child(2){
+                font-size:24px;
+            }
+            a{
+                color:white;
+                text-decoration: none;
+                width:90px;
+                padding-bottom: 10px;
+            }
+            a:hover{
+                margin-bottom:-3px;
+                border-bottom: 3px solid white;
+            }
+        }
+        &__pic{
+            overflow:hidden;
+            height:630px;
+            position: relative;
+            top:-15px;
+            img{
+                height: 709px;
+                object-fit: cover;
+            }
+            
+        }
+    }
+    color:white;
+    
+}
+
+@media screen and (max-width:600px){
+    .banner-2{
+        &__flag{
+            padding:0 0 0 20px;
+            width:100vw;
         }
     }
 }
