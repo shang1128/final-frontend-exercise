@@ -69,11 +69,25 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
+  margin: 40px 0;
+}
+
+.items-container-menus-boxes::after {
+  content: "HOT";
+  position: absolute;
+  background-color: #FD2E2E;
+  padding: 5px 10px;
+  left: 10px;
+  top: 10px;
+  font-size: 10pt;
+  font-weight: bolder;
+  color: white;
 }
 
 .items-container-menus-boxes--img {
   border: 1px solid lightgray;
-  padding: 30px 10px;
+  padding: 60px 10px;
 }
 
 .items-container-menus-content {
@@ -89,6 +103,9 @@
   display: -ms-flexbox;
   display: flex;
   margin: 30px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .items-container-menus-content--smallDetails--str {
@@ -110,6 +127,21 @@
 
 .items-container-menus-content--smallDetails--subReviews {
   color: #33A0FF;
+  font-weight: bolder;
+}
+
+.items-container-menus-content--price {
+  font-size: 18pt;
+}
+
+.items-container-menus-content--price p {
+  margin-right: 10px;
+}
+
+.items-container-menus-content--p {
+  letter-spacing: 1px;
+  line-height: 1.6;
+  margin: 20px 0;
 }
 
 .items-container-menus-content--buttons {
@@ -119,17 +151,54 @@
 }
 
 .items-container-menus-content--buttons--add {
-  padding: 10px;
+  padding: 20px;
   margin-right: 10px;
   border: none;
   color: #33A0FF;
   background-color: #dfe8f0;
+  border-radius: 5px;
+  font-size: 12pt;
+}
+
+.items-container-menus-content--buttons--add i {
+  margin-right: 10px;
 }
 
 .items-container-menus-content--buttons--heart {
-  padding: 10px;
+  padding: 20px;
   border: none;
   color: #33A0FF;
   background-color: #dfe8f0;
+  border-radius: 5px;
+  font-size: 12pt;
+}
+
+hr {
+  border: 1px solid #f6f6f6;
+}
+
+.items-container-menuNumbers {
+  background-color: #fbf9f9;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 90px;
+}
+
+.items-container-menuNumbers a {
+  text-decoration: none;
+  color: #04042e;
+  margin: 0 8px;
+  padding: 15px 23px;
+  font-weight: bolder;
+}
+
+.items-container-menuNumbers a:hover {
+  color: white;
+  background-color: #04042e;
 }
 /*# sourceMappingURL=page9.css.map */
