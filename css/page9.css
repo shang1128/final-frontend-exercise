@@ -177,6 +177,10 @@ hr {
   border: 1px solid #f6f6f6;
 }
 
+.hr-properties {
+  width: 80%;
+}
+
 .items-container-menuNumbers {
   background-color: #fbf9f9;
   width: 100%;
