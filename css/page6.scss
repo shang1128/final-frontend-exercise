@@ -20,6 +20,100 @@
     margin: 0 auto;
 
 }
+
+.newsletter{
+    display:flex;
+    justify-content: center;
+    &__background{
+        position:fixed;
+        height:100%;
+        width:100%;
+        z-index:2;
+        /* The image used */
+        background-color:black;
+        opacity:50%;
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &__popup{
+        box-shadow: 5px 5px 18px;
+        margin-top:20vh;
+        position: fixed;
+        background-color: white;
+        z-index:3;
+        height:70vh;
+        width:60vw;
+        display:flex;
+        border-radius:10px;
+        .close{
+            position: absolute;
+            right:-18px;
+            top:-18px;
+            height:47px;
+            width: 47px;
+            border-radius: 25px;
+            background-color: #22262A;
+            outline: none;
+            border:none;
+            i{
+                color:grey;
+                font-size:15px;
+            }
+        }
+        &--content{
+            flex:6;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            gap:3rem;
+            padding:5em;
+            h1{
+                font-size:48px;
+                color:#22262A;
+            }
+            span{
+                text-align: center;
+                font-size:16px;
+                line-height:1.6;
+            }
+            form{
+                margin-top:5vh;
+                display:flex;
+                input[type=text],button{
+                    padding:20px 30px;
+                    border:1px solid #F1F3F4;
+                    outline:none;
+                }
+                button{
+                    color:white;
+                    background-color: #33A0FF;
+                }
+            }
+            #checkbox-form{
+                display:flex;
+                gap:.8rem;
+                justify-content: center;
+                align-items: center;
+                input[type=checkbox]{
+                    width:15px;
+                    height: 15px;
+                }
+            }
+        }
+        &--img{
+            flex:6;
+            img{
+                height:100%;
+            }
+        }
+    }
+}
+.newsletter__popup .close:hover{
+    background: black;
+}
 .foot-sec1{
     display: flex;
     justify-content: space-between;
@@ -33,7 +127,7 @@
         color: blue;
     }
     &-twit{
-        color: skyblue;
+        color: #33A0FF;
     }
 }
 .foot-sec1-rakuinfo{
@@ -142,6 +236,15 @@
     }
 
 }
+.foot-sec3{
+    margin: 20px 0 20px auto;
+    display: block;
+    width: 212px;
+
+    img{
+        margin-left: 10px;
+    }
+}
 .header{
     display:flex;
     justify-content: space-between;
@@ -233,10 +336,17 @@
 
         li{
             display: flex;
+            box-sizing: border-box;
         }
         a{
             text-decoration: none;
             color: black;
+            border-bottom: 2px solid transparent;
+
+            &:hover{
+                color: #33A0FF;
+                border-bottom: 2px solid #33A0FF;
+            }
         }
     }
 }
@@ -256,7 +366,37 @@
             align-items: center;
             padding: 20px 0;
     &--image{
-        width: 200px;
+        position: relative;
+
+        img{
+            width: 200px;
+        }
+        &:hover .bs-category-gallery--one--box--image--overlay{
+            opacity: 90%;
+        }
+        &--overlay{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: .3s ease;
+            background-color: white;
+            // border: 1px solid red;
+
+            i{
+                margin: 0 10px;
+                color: #33A0FF;
+                font-size: 13pt;
+            }
+        }
+
     }
     &--h4{
         margin: 20px 0;
@@ -310,17 +450,100 @@
     margin-top: 80px;
 
     a{
-        color: skyblue;
+        color: #33A0FF;
+        border-bottom: 2px solid transparent;
+        text-decoration: none;
+        font-weight: bolder;
+
+        &:hover{
+        border-bottom: 2px solid #33A0FF;
+
+        }
     }
 }
+
 .others-category-freefundsupport{
     display: flex;
     justify-content: space-between;
+    margin: 60px 0;
 
     &--box{
         width: 330px;
-        height: 150px;
-        border: 1px solid red;
+        height: auto;
+        padding: 10px 20px;
+        // border: 1px solid red;
         text-align: center;
+
+        &--i{
+            color: #FD2E2E;
+            font-size: 30pt;
+        }
+        &--h3{
+            font-weight: bolder;
+            margin: 20px 0;
+        }
+        &--p{
+            font-size: 10pt;
+            line-height:1.6;
+        }
+    }
+}
+.others-category-latestnews{
+    margin: 90px 0;
+}
+.others-category-latestnews-h2{
+    text-align: center;
+    font-weight: bolder;
+}
+.others-category-latestnews--boxes{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.others-category-latestnews--box{
+    display: flex;
+    // border: 1px solid red;
+    width: 330px;
+    height: 126px;
+
+       &--content{
+        margin: 24px 10px;
+
+        &--date{
+            font-size: 10pt;
+            color: lightgray;
+        }
+        &--h5{
+            font-weight: bolder;
+            margin: 10px 0;
+        }
+        &--text{
+            line-height: 1.2;
+            font-size: 10pt;
+        }
+    }
+}
+.input-search{
+    display: flex;
+    justify-content: center;
+    margin: 150px 0;
+
+    &--inputs{
+        background-color: transparent;
+        border: 1px solid lightgray;
+        width: 500px;
+        padding-left: 20px;
+        margin-right: 10px;
+
+        &:focus{
+            outline: none;
+        }
+    }
+    &--butn{
+        background-color:#33A0FF;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        padding: 25px 40px;
     }
 }

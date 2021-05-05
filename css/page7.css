@@ -78,7 +78,7 @@
 .links__nav--links li {
   list-style-type: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: bolder;
   font-size: 14px;
 }
 .links__nav--links li a {
@@ -133,7 +133,14 @@
   line-height: 1.5rem;
 }
 .banner__flag .flag__text a {
+  text-decoration: none;
   color: white;
+  width: 45px;
+  padding-bottom: 5px;
+}
+.banner__flag .flag__text a:hover {
+  margin-bottom: -3px;
+  border-bottom: 3px solid white;
 }
 .banner__flag .flag__pic {
   flex: 4;
@@ -147,6 +154,7 @@
   top: -10vh;
   width: 70vw;
   margin: auto;
+  flex-wrap: wrap;
 }
 .banner__mini h1 {
   font-size: 24px;
@@ -222,6 +230,63 @@
   height: 150px;
   bottom: 50px;
   right: 50px;
+}
+
+.banner-2 {
+  height: 600px;
+  background-color: #2E90E5;
+  display: flex;
+  justify-content: center;
+  margin: 10vh 0;
+  color: white;
+}
+.banner-2__flag {
+  width: 70vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+.banner-2__flag__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  width: 40%;
+}
+.banner-2__flag__text span {
+  font-size: 66px;
+  font-weight: 100;
+  line-height: 1.6;
+}
+.banner-2__flag__text span:nth-child(2) {
+  font-size: 24px;
+}
+.banner-2__flag__text a {
+  color: white;
+  text-decoration: none;
+  width: 90px;
+  padding-bottom: 10px;
+}
+.banner-2__flag__text a:hover {
+  margin-bottom: -3px;
+  border-bottom: 3px solid white;
+}
+.banner-2__flag__pic {
+  overflow: hidden;
+  height: 630px;
+  position: relative;
+  top: -15px;
+}
+.banner-2__flag__pic img {
+  height: 709px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+  .banner-2__flag {
+    padding: 0 0 0 20px;
+    width: 100vw;
+  }
 }
 
 /*# sourceMappingURL=page7.css.map */
