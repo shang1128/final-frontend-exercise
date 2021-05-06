@@ -6,8 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/page6.css">
     <link rel="stylesheet" href="/css/page7.css">
+<<<<<<< HEAD:pages/page10.html
     <link rel="stylesheet" href="/css/page9.css">
     <link rel="stylesheet" href="/css/page10.css">
+=======
+    <link rel="stylesheet" href="/css/page11.css">
+>>>>>>> develop:pages/page11.html
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Page 10</title>
 </head>
@@ -69,6 +73,7 @@
     </section>
 
     
+<<<<<<< HEAD:pages/page10.html
     
         <div class="container">
             <div class="contentPage10">
@@ -291,6 +296,91 @@
             </section>
 
         </div>
+=======
+    <div class="container page11">
+        <div class="container items-list">
+            <section class="items-list__header">
+                <h1>Product</h1>
+                <h1>Price</h1>
+                <h1>QTY</h1>
+                <h1>Unit Price</h1>
+            </section>
+            <hr/>
+            <section class="items-list__item">
+                <section class="items-list__item--name">
+                    <section class="items-list__item--name__delete">
+                        <i class="fas fa-times"></i>
+                        <span class='background'></span>
+                    </section>
+                    <section class="image-container">
+                        <img src="/assets/Rectangle 5.png" alt="">
+                    </section>
+                    <h1>Philips Hue 7W BR30 Connected Downlight Lamp</h1>
+                </section>
+                <h1>$998</h1>
+                <input type="hidden" class='price' value="998">
+                <section class="items-list__item--quantity">
+                    <form action="">
+                        <button class='minus-quantity'><i class='fa fa-minus'></i></button>
+                        <input type="number" name="quantity" class="quantity" min="0" value="0">
+                        <button class='add-quantity'><i class='fa fa-plus'></i></button>
+                    </form>
+                </section>
+                <input type="hidden" name="" value="0" class="unit-price-hidden">
+                <h1 class='unit-price'>$499</h1>
+            </section>
+            <hr/>
+            <section class="items-list__item">
+                <section class="items-list__item--name">
+                    <section class="items-list__item--name__delete">
+                        <i class="fas fa-times"></i>
+                        <span class='background'></span>
+                    </section>
+                    <section class="image-container">
+                        <img src="/assets/50061505_575246.png" alt="">
+                    </section>
+                    <h1>Apple Macbook Pro</h1>
+                </section>
+                <h1>$998</h1>
+                <input type="hidden" class='price' value="998">
+                <section class="items-list__item--quantity">
+                    <form action="">
+                        <button class='minus-quantity'><i class='fa fa-minus'></i></button>
+                            <input type="number" name="quantity" class="quantity" min="0" value="0">
+                        <button class='add-quantity'><i class='fa fa-plus'></i></button>
+                    </form>
+                </section>
+                <input type="hidden" name="" value="0" class="unit-price-hidden">
+                <h1 class='unit-price'>$499</h1>
+            </section>
+            <hr>
+        </div>
+
+        <div class="container total">
+            <section class="voucher">
+                <form action="">
+                    <input type="text" name="" placeholder="Voucher Code" id="voucher-code">
+                    <button>Redeem</button>
+                </form>
+            </section>
+            <form action="" class="checkout">
+                <section class="checkout-container">
+                    <ul class="checkout-container__price-list">
+                        <li><span>Subtotal</span><span class='sub-total'>$998</span></li>
+                        <li><span>Shipping fee</span><span>$20</span></li>
+                        <li><span>Coupon</span><span>No</span></li>
+                    </ul>
+                </section>
+                <hr>
+                <section class="checkout-container__total">
+                    <h1>Total</h1>
+                    <h1 class="total-price">$118</h1>
+                </section>
+                <button>Checkout</button>
+            </form>
+        </div>
+    </div>
+>>>>>>> develop:pages/page11.html
 
 
   
@@ -377,5 +467,6 @@
         </div>
     </footer>
 
+    <script src="/js/page11.js"></script>
 </body>
 </html>
