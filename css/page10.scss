@@ -375,3 +375,20 @@ input[type="radio"] {
         margin-bottom: 50px;
     }
 }
+.items-right-slides{
+    display: flex;
+    justify-content: center;
+    
+
+    &-button{
+        width: 30px;
+        height: 4px;
+        background-color: #d3d3d3;
+        border: none;
+        margin: 0 3px;
+
+        &:hover, :active{
+            background-color:#44aaf4;
+        }
+    }
+}

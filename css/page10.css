@@ -453,4 +453,25 @@ input[type="radio"] {
   letter-spacing: 1.5px;
   margin-bottom: 50px;
 }
+
+.items-right-slides {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.items-right-slides-button {
+  width: 30px;
+  height: 4px;
+  background-color: #d3d3d3;
+  border: none;
+  margin: 0 3px;
+}
+
+.items-right-slides-button:hover, .items-right-slides-button :active {
+  background-color: #44aaf4;
+}
 /*# sourceMappingURL=page10.css.map */
