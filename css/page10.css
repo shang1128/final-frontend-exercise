@@ -273,8 +273,8 @@ input[type=radio] {
   color: black;
   border: none;
   background-color: #f4f3f3;
-  padding: 8px 14px;
-  font-size: 8pt;
+  padding: 10px 14px;
+  font-size: 10pt;
   font-weight: bolder;
 }
 .numOrder--add {
@@ -287,6 +287,32 @@ input[type=radio] {
 }
 .numOrder--add:focus {
   outline: none;
+}
+
+.buttonCartheart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.buttonCartheart-add {
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  color: #33A0FF;
+  background-color: #dfe8f0;
+  border-radius: 3px;
+  font-size: 10pt;
+}
+.buttonCartheart-add i {
+  margin-right: 10px;
+}
+.buttonCartheart-heart {
+  padding: 10px;
+  border: none;
+  color: #33A0FF;
+  background-color: #dfe8f0;
+  border-radius: 3px;
+  font-size: 10pt;
 }
 
 .socialmedia {

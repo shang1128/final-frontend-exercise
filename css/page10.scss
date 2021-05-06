@@ -238,8 +238,8 @@ input[type="radio"] {
         color:black;
         border: none;
         background-color: #f4f3f3;
-        padding: 8px 14px;
-        font-size: 8pt;
+        padding: 10px 14px;
+        font-size: 10pt;
         font-weight: bolder;
     }
     &--add{
@@ -255,7 +255,31 @@ input[type="radio"] {
         }
     }
 }
+.buttonCartheart{
+    display: flex;
 
+    &-add{
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        color: #33A0FF;
+        background-color: #dfe8f0;
+        border-radius: 3px;
+        font-size: 10pt;
+
+        i{
+            margin-right: 10px;
+        }
+    }
+    &-heart{
+        padding: 10px;
+        border: none;
+        color: #33A0FF;
+        background-color: #dfe8f0;
+        border-radius: 3px;
+        font-size: 10pt;
+    }
+}
 .socialmedia{
     display: flex;
     justify-content: flex-end;
