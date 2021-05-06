@@ -365,15 +365,19 @@
             flex-direction: column;
             align-items: center;
             padding: 20px 0;
+
+            
     &--image{
         position: relative;
 
         img{
             width: 200px;
+          
         }
-        &:hover .bs-category-gallery--one--box--image--overlay{
+        &:hover &--overlay{
             opacity: 90%;
-        }
+        } 
+       
         &--overlay{
             position: absolute;
             top: 0;
