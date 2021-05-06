@@ -241,7 +241,13 @@
 .header__account--item {
   display: flex;
   gap: 0.5rem;
-  align-items: center;
+
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+ 
+
 }
 .header__account--item small {
   font-weight: 100;
@@ -371,12 +377,15 @@
   background-color: white;
 }
 
+.bs-category-gallery--one--box--image {
+  width: 200px;
+
+
 .bs-category-gallery--one--box--image--overlay i {
   margin: 0 10px;
   color: #33A0FF;
   font-size: 13pt;
 }
-
 .bs-category-gallery--one--box--h4 {
   margin: 20px 0;
 }
@@ -514,6 +523,10 @@
   border: none;
   border-radius: 3px;
   padding: 25px 40px;
+
+}/*# sourceMappingURL=page6.css.map */
+
 }
 
 /*# sourceMappingURL=page6.css.map */
+
