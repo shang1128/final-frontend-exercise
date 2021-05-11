@@ -1,6 +1,6 @@
 @font-face {
-  font-family: 'Proxima Nova Rg';
-  src: url("/fonts/proxima/ProximaNova-Regular.woff2") format("woff2"), url("/fonts/proxima/ProximaNova-Regular.woff") format("woff");
+  font-family: "Proxima Nova Rg";
+  src: url("./fonts/proxima/ProximaNova-Regular.woff2") format("woff2"), url("./fonts/proxima/ProximaNova-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -424,5 +424,9 @@
     padding: 0 0 0 20px;
     width: 100vw;
   }
+<<<<<<< HEAD
 }
 /*# sourceMappingURL=page7.css.map */
+=======
+}/*# sourceMappingURL=page7.css.map */
+>>>>>>> 25a2b2c (Update page7.css)
