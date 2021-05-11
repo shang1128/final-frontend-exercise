@@ -42,9 +42,10 @@
         &--largeView{
             // border: 1px solid blue;
             height: 350px;
+            transform: scaleX(-1);
 
             img{
-                object-fit: contain;
+                object-fit: cover;
                 height: 100%;
                 width: 100%;
             }
@@ -147,7 +148,7 @@ input[type="radio"] {
   
   .color-option span {
     position: absolute;
-    width: 90%;
+    width: 88%;
     height: 88%;
     border-radius: 50%;
     display: flex;
