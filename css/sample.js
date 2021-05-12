@@ -24,18 +24,35 @@ function assignedGrade(score){
 }
 console.log(assignedGrade(63));
 
-document.getElementsByClassName('blue')[0].addEventListener('click', function(){
-    document.getElementsByClassName('items-left-details--productImages--largeView')[0].style="background-color:blue";
+
+// document.getElementsByClassName('blue')[0].addEventListener('click', function(){
+//     document.getElementsByClassName('items-left-details--productImages--largeView')[0].style="background-color:blue";
+// })
+// document.getElementsByClassName('red')[0].addEventListener('click', function(){
+//     document.getElementsByClassName('items-left-details--productImages--largeView')[0].style="background-color:red";
+// })
+// document.getElementsByClassName('black')[0].addEventListener('click', function(){
+//     document.getElementsByClassName('items-left-details--productImages--largeView')[0].style="background-color:black";
+// })
+// document.getElementsByClassName('yellow')[0].addEventListener('click', function(){
+//     document.getElementsByClassName('items-left-details--productImages--largeView')[0].style="background-color:yellow";
+// })
+
+document.getElementsByClassName('black')[0].addEventListener('click', function(){
+    document.getElementById('imageChanges').src="Beats-earphone/beats__3.png";
 })
 document.getElementsByClassName('red')[0].addEventListener('click', function(){
-    document.getElementsByClassName('items-left-details--productImages--largeView')[0].style="background-color:red";
+    document.getElementById('imageChanges').src="Beats-earphone/beat-red.png";
 })
-document.getElementsByClassName('black')[0].addEventListener('click', function(){
-    document.getElementsByClassName('items-left-details--productImages--largeView')[0].style="background-color:black";
+document.getElementsByClassName('blue')[0].addEventListener('click', function(){
+    document.getElementById('imageChanges').src="Frontend-final-exercise/black_hero_retina_1800x1800_V2.png";
 })
 document.getElementsByClassName('yellow')[0].addEventListener('click', function(){
-    document.getElementsByClassName('items-left-details--productImages--largeView')[0].style="background-color:yellow";
+    document.getElementById('imageChanges').src="Frontend-final-exercise/black_hero_retina_1800x1800_V2.png";
 })
+
+
+
 
 let counter=1;
 
