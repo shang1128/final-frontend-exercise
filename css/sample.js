@@ -46,6 +46,7 @@ document.getElementsByClassName('red')[0].addEventListener('click', function(){
 })
 document.getElementsByClassName('blue')[0].addEventListener('click', function(){
     document.getElementById('imageChanges').src="Beats-earphone/beats__4.png";
+    
 })
 // document.getElementsByClassName('yellow')[0].addEventListener('click', function(){
 //     document.getElementById('imageChanges').src="Beats-earphone/beat-red.png";
