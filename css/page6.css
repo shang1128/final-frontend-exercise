@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Proxima Nova Rg";
-  src: url("/fonts/proxima/ProximaNova-Regular.woff2") format("woff2"), url("/fonts/proxima/ProximaNova-Regular.woff") format("woff");
+  src: url("../fonts/proxima/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/proxima/ProximaNova-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,6 +18,7 @@
 
 .container {
   width: 70vw;
+  max-width: 1344px;
   margin: 0 auto;
 }
 
@@ -174,11 +175,11 @@
 
 .foot-sec1-fticons-fb {
   margin-right: 40px;
-  color: blue;
+  color: #385c8e;
 }
 
 .foot-sec1-fticons-twit {
-  color: #33A0FF;
+  color: #03a9f4;
 }
 
 .foot-sec1-rakuinfo {
@@ -186,7 +187,7 @@
 }
 
 .foot-sec1-rakuinfo-h3 {
-  color: lightgray;
+  color: #bdbdbd;
   font-weight: bolder;
 }
 
@@ -290,12 +291,23 @@
 
 .foot-sec3 {
   margin: 20px 0 20px auto;
-  display: block;
-  width: 212px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.foot-sec3 img {
-  margin-left: 10px;
+.foot-sec3-copyright {
+  color: #d9dee1;
+}
+
+.foot-sec3-paymentIcon {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header {
@@ -513,7 +525,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: yellow;
+  color: #fec73d;
+  font-size: 10pt;
 }
 
 .bs-category-gallery--one--box--stars--last {
@@ -532,7 +545,7 @@
 }
 
 .bs-category-gallery--one--box--price--enabled {
-  color: red;
+  color: #f74657;
 }
 
 .bs-category-gallery--one--box--price--disabled {
@@ -592,7 +605,7 @@
 }
 
 .others-category-freefundsupport--box--i {
-  color: #FD2E2E;
+  color: #f76774;
   font-size: 30pt;
 }
 
@@ -631,6 +644,10 @@
   display: flex;
   width: 330px;
   height: 126px;
+}
+
+.others-category-latestnews--box--featured3Img {
+  margin-left: -26px;
 }
 
 .others-category-latestnews--box--content {
@@ -675,10 +692,16 @@
 }
 
 .input-search--butn {
-  background-color: #33A0FF;
+  background-color: #2e90e5;
   color: white;
   border: none;
+  font-weight: bold;
+  letter-spacing: 1px;
   border-radius: 3px;
   padding: 25px 40px;
+}
+
+.input-search--butn:focus {
+  outline: none;
 }
 /*# sourceMappingURL=page6.css.map */
