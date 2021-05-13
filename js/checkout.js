@@ -7,9 +7,9 @@ let totalAmount = document.querySelector('.total-price');
 let deleteOrder = document.querySelectorAll('.items-list__item--name__delete');
 let deleteItems = document.querySelectorAll('.items-list__item');
 
-let counter = new Array(quantityValue.length); //[undefined,undefined]
+let counter = new Array(quantityValue.length); 
 let total=0;
-counter.fill(0); //[0,0];
+counter.fill(0); 
 
 // console.log(incrementButton, decrementButton, quantityValue)
 
@@ -17,7 +17,6 @@ counter.fill(0); //[0,0];
 for(let i = 0; i<=incrementButton.length;i++){
     incrementButton[i].addEventListener('click', function(e){
         e.preventDefault();
-        // console.log("efsedf");  
         counter[i]++;    
         quantityValue[i].value=counter[i];
         unitPriceValue[i].innerHTML=`$${calculateOrder(counter[i], 998)}`;
