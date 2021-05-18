@@ -1,0 +1,78 @@
+.signupTitle {
+  font-weight: bolder;
+  font-size: 20pt;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.alacc {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 25px;
+  font-size: 10pt;
+}
+
+.signingup {
+  background-color: #f83f37;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  padding: 15px 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: none;
+  margin: 20px 0;
+  font-size: 9pt;
+}
+
+.signingup:focus {
+  outline: none;
+}
+
+.login {
+  font-weight: bold;
+  text-decoration: none;
+  color: #223975;
+}
+
+.in-email {
+  border: 1px solid lightgray;
+  background-color: transparent;
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.in-password {
+  border: 1px solid lightgray;
+  background-color: transparent;
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.check {
+  margin: 10px 10px 10px 0;
+  width: 20px;
+  height: 20px;
+}
+
+.ccon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.agreed {
+  width: 274px;
+  text-align: center;
+  font-size: 9pt;
+}
+/*# sourceMappingURL=signup.css.map */
