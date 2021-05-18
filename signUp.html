@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/signup.css">
     <link rel="stylesheet" href="./css/signin.css">
     <link rel="stylesheet" href="./css/page6.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Sign Up</title>
 </head>
 <body>
@@ -26,11 +27,16 @@
                <input type="text" class="input-email">
                 <label for="" class="email">Email</label>
                 <input type="text" class="in-email">
-                <label for="" class="pass">Password</label>
-                <input type="password" class="in-password" placeholder="Must be at least 6 characters">
+                
+                <div class="conpass">
+                    <label for="" class="pass">Password</label>
+                <input type="password" id="password" class="in-password" placeholder="Must be at least 6 characters">
+                <i class="far fa-eye-slash" id="showHidePassword"></i>
+                <!-- <i class="far fa-eye-slash iconHide" id="hide"></i> -->
+                </div>
+                
                 <div class="ccon">
                 <input type="checkbox" name="check" class="check"><label for="check">Sign up for email updates.</label>
-
                 </div>
                 <button class="signingup">SIGN UP</button>
                 <p class="agreed">By continuing, you agree to accept our
@@ -39,5 +45,9 @@
             </div>
         </div>
     </section>
+
+
+    <script src="/js/signup.js"></script>
+
 </body>
 </html>

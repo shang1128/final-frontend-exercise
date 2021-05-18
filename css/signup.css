@@ -49,10 +49,21 @@
   border: 1px solid lightgray;
   background-color: transparent;
   width: 100%;
-  padding: 8px 10px;
+  padding: 8px 40px 8px 10px;
   margin-top: 5px;
   margin-bottom: 10px;
   height: 40px;
+}
+
+.conpass {
+  position: relative;
+}
+
+.conpass i {
+  position: absolute;
+  top: 43px;
+  right: 11px;
+  cursor: pointer;
 }
 
 .check {
