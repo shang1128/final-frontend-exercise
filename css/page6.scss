@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Proxima Nova Rg";
-    src: url("../fonts/proxima/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/proxima/ProximaNova-Regular.woff") format("woff");
+    src: url("/fonts/proxima/ProximaNova-Regular.woff2") format("woff2"), url("/fonts/proxima/ProximaNova-Regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -358,25 +358,22 @@
     margin: 0 auto;
 
     &--box{
-            // width: 240px;
+            width: 240px;
+            height: 280px;
             border: 1px solid lightgray;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px 20px;
-
-            
+            padding: 20px 0;
     &--image{
         position: relative;
 
         img{
             width: 200px;
-          
         }
-        &:hover &--overlay{
+        &:hover .bs-category-gallery--one--box--image--overlay{
             opacity: 90%;
-        } 
-       
+        }
         &--overlay{
             position: absolute;
             top: 0;
@@ -535,8 +532,8 @@
         background-color: transparent;
         border: 1px solid lightgray;
         width: 500px;
-        padding: 0 20px;
-        
+        padding-left: 20px;
+        margin-right: 10px;
 
         &:focus{
             outline: none;
@@ -549,8 +546,4 @@
         border-radius: 3px;
         padding: 25px 40px;
     }
-}
-a{
-    text-decoration: none;
-    color: #000000;
 }
