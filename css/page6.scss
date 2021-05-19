@@ -358,13 +358,12 @@
     margin: 0 auto;
 
     &--box{
-            width: 240px;
-            height: 280px;
+            // width: 240px;
             border: 1px solid lightgray;
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 20px 0;
+            padding: 20px 20px;
 
             
     &--image{
