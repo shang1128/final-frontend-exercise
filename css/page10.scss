@@ -58,9 +58,14 @@
             display: flex;
 
             &--small{
-                border: 1px solid lightgray;
+                border: 2px solid lightgray;
                 margin: 0 10px;
                 padding: 8px;
+
+
+                &:hover{
+                    border: 2px solid blue;
+                }
             }
         }
     }
