@@ -666,8 +666,7 @@
   background-color: transparent;
   border: 1px solid lightgray;
   width: 500px;
-  padding-left: 20px;
-  margin-right: 10px;
+  padding: 0 20px;
 }
 
 .input-search--inputs:focus {
