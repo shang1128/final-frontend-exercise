@@ -42,7 +42,10 @@
         &--largeView{
             // border: 1px solid blue;
             height: 350px;
-            transform: scaleX(-1);
+            width: 412px;
+            object-fit: contain;
+            margin: 0 auto;
+
 
             img{
                 object-fit: contain;
@@ -246,6 +249,8 @@ input[type="radio"] {
         padding: 8px 14px;
         font-size: 8pt;
         font-weight: bolder;
+        cursor: pointer;
+
 
         &:focus{
             outline: none;
@@ -266,6 +271,7 @@ input[type="radio"] {
         padding: 8px 14px;
         font-size: 10pt;
         font-weight: bolder;
+        cursor: pointer;
 
         &:focus{
             outline: none;
@@ -332,28 +338,40 @@ input[type="radio"] {
 }
 .productInformation{
     width: 100%;
-    background-color:#f6f6f6;
+    background-color:#fafafb;
     padding: 30px;
 
+    &--hr{
+        border: 2px solid #f0f1f2;
+    }
     &-menu{
         display: flex;
+        margin-bottom: 20px;
 
         a{
         text-decoration:none;
         color: black;
-        // font-weight: bolder;
+        font-weight: bold;
         margin-right: 40px;
-        margin-bottom: 20px;
+        position: relative;
 
+        &:hover:after {
+            content: '';
+            position: absolute;
+            bottom: -23px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #2e90e5;
+        }
+        
         }
     }
     &-p{
         margin-top: 20px;
         line-height: 25px;
     }
-    
 }
-
 
 .items-right{
     width: 25%;
@@ -370,6 +388,7 @@ input[type="radio"] {
     &-h4{
         color: #adadad;
         font-weight: bolder;
+        margin-bottom: 30px;
     }
     &-box{
        margin: 20px 0;
@@ -422,7 +441,7 @@ input[type="radio"] {
 .items-right-slides{
     display: flex;
     justify-content: center;
-    
+    margin-top: 30px;
 
     &-button{
         width: 30px;
@@ -435,4 +454,11 @@ input[type="radio"] {
             background-color:#44aaf4;
         }
     }
+}
+button:focus{
+outline: none;
+ 
+&:hover{
+    cursor: pointer;
+}
 }

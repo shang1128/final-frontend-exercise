@@ -51,10 +51,7 @@ addToCart.addEventListener('click', function(){
 });
 
 
-function addingToCart(img, name, price, qty){
-    img = 
 
-}
 
 // function addingToCart(src, title, price){
 

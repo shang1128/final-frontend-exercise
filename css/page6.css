@@ -290,12 +290,23 @@
 
 .foot-sec3 {
   margin: 20px 0 20px auto;
-  display: block;
-  width: 212px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.foot-sec3 img {
-  margin-left: 10px;
+.foot-sec3-copyright {
+  color: #d9dee1;
+}
+
+.foot-sec3-paymentIcon {
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .header {
@@ -679,10 +690,6 @@
   border: none;
   border-radius: 3px;
   padding: 25px 40px;
-}
-
-.input-search--butn:focus {
-  outline: none;
 }
 
 a {

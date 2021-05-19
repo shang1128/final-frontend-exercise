@@ -235,16 +235,20 @@
         }
     }
 
-}
-.foot-sec3{
+}.foot-sec3{
     margin: 20px 0 20px auto;
-    display: block;
-    width: 212px;
+    display: flex;
+    justify-content: space-between;
 
-    img{
-        margin-left: 10px;
+    &-copyright{
+        color: #d9dee1;
     }
+   &-paymentIcon{
+    gap: 20px;
+    display: flex;
+   }
 }
+
 .header{
     display:flex;
     justify-content: space-between;
