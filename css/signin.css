@@ -1,6 +1,8 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .bg-images {
@@ -29,7 +31,7 @@
 }
 
 .content-container {
-  width: 70%;
+  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,8 +42,13 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 30px 0;
-  gap: 40%;
   z-index: 1;
+}
+
+.raku-title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .raku-title--rak {
@@ -62,7 +69,7 @@
 
 .raku-line {
   border-bottom: 4px solid #b32d2d;
-  width: 20%;
+  width: 66px;
   margin: 10px 0;
 }
 
@@ -99,10 +106,6 @@
 .s-apple img {
   width: 25px;
   height: 25px;
-}
-
-.s-apple:focus {
-  outline: none;
 }
 
 .social-buttons {

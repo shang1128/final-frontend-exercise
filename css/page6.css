@@ -1,9 +1,6 @@
 @font-face {
   font-family: "Proxima Nova Rg";
   src: url("../fonts/proxima/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/proxima/ProximaNova-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
 }
 
 * {
@@ -12,13 +9,20 @@
   margin: 0;
   padding: 0;
   font-family: "Proxima Nova Rg";
-  font-weight: normal;
-  font-style: normal;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .container {
-  width: 70vw;
+  width: 1270px;
   margin: 0 auto;
+}
+
+.selectEN, .selectUSD {
+  background: none;
+  border: none;
 }
 
 .newsletter {
@@ -174,11 +178,11 @@
 
 .foot-sec1-fticons-fb {
   margin-right: 40px;
-  color: blue;
+  color: #385c8e;
 }
 
 .foot-sec1-fticons-twit {
-  color: #33A0FF;
+  color: #03a9f4;
 }
 
 .foot-sec1-rakuinfo {
@@ -192,6 +196,7 @@
 
 .foot-sec1-rakuinfo-p {
   margin: 25px 0;
+  line-height: 26px;
 }
 
 .foot-sec1-follow {
@@ -205,6 +210,7 @@
 
 .foot-sec1-follow-p {
   margin: 14px 0 30px 0;
+  line-height: 26px;
 }
 
 .foot-sec1-contact {
@@ -218,6 +224,7 @@
 
 .foot-sec1-contact-p {
   margin: 12px 0;
+  line-height: 26px;
 }
 
 .foot-sec1-contact-p span {
@@ -309,60 +316,6 @@
   display: flex;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 10vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 14px;
-}
-
-.header__account {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-  font-weight: 600;
-}
-
-.header__account--item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: .5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.header__account--item small {
-  font-weight: 100;
-}
-
-.header__account--item:nth-child(3) {
-  margin: 0 0 0 30px;
-}
-
-.header__lang {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1rem;
-}
-
-.header__lang select, .header__lang select:active {
-  border: none;
-}
-
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -444,6 +397,7 @@
   text-decoration: none;
   color: black;
   border-bottom: 2px solid transparent;
+  padding: 10px 0;
 }
 
 .bs-category-menu--ul a:hover {
@@ -455,8 +409,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 0 auto;
 }
 
@@ -508,10 +463,10 @@
   -webkit-transition: .3s ease;
   transition: .3s ease;
   background-color: white;
+  gap: 42px;
 }
 
 .bs-category-gallery--one--box--image--overlay i {
-  margin: 0 10px;
   color: #33A0FF;
   font-size: 13pt;
 }
@@ -574,24 +529,23 @@
   margin-top: 80px;
 }
 
-.load-link a {
+.load-link .load {
   color: #33A0FF;
-  border-bottom: 2px solid transparent;
-  text-decoration: none;
-  font-weight: bolder;
+  padding-bottom: 10px;
 }
 
-.load-link a:hover {
-  border-bottom: 2px solid #33A0FF;
+.load-link .load:hover {
+  bottom: -3px;
+  border-bottom: 3px solid #33A0FF;
 }
 
 .others-category-freefundsupport {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin: 60px 0;
 }
 
@@ -618,7 +572,7 @@
 }
 
 .others-category-latestnews {
-  margin: 90px 0;
+  margin: 90px auto;
 }
 
 .others-category-latestnews-h2 {
@@ -630,9 +584,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  gap: 43px;
   margin: 30px 0;
 }
 
@@ -645,7 +600,20 @@
 }
 
 .others-category-latestnews--box--content {
-  margin: 24px 10px;
+  margin: 0 0 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .others-category-latestnews--box--content--date {
@@ -690,10 +658,108 @@
   border: none;
   border-radius: 3px;
   padding: 25px 40px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.input-search--butn:hover, .input-search--butn:active, .input-search--butn:focus {
+  outline: none;
+  background-color: #298de6;
 }
 
 a {
   text-decoration: none;
   color: #000000;
+}
+
+.home {
+  position: relative;
+}
+
+.dropdown {
+  visibility: collapse;
+  position: absolute;
+  top: 20px;
+  left: -250px;
+  background-color: #ffffff;
+  border-top: 1px solid #e7e6e6;
+  width: 1180px;
+  height: 350px;
+  padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+}
+
+.dropdown::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 267px;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 8px solid #e7e6e6;
+}
+
+.dropdown::after {
+  content: '';
+  background-color: transparent;
+  width: 60px;
+  height: 18px;
+  top: -13px;
+  left: 242px;
+  position: absolute;
+}
+
+.dropdown li {
+  margin: 30px 45px;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+.dropdown ul:nth-child(2) {
+  margin-top: -36px;
+}
+
+.dropdown ul:nth-child(4) {
+  margin-top: -83px;
+}
+
+.dropdown ul:nth-child(5) {
+  margin-top: -90px;
+}
+
+.dropdown .lititle {
+  color: #c1c8ce;
+  font-size: 14pt;
+}
+
+.links li:hover .dropdown, .dropdown:hover {
+  visibility: visible;
+}
+
+i {
+  cursor: pointer;
+}
+
+.fit-image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 107px;
+  height: 126px;
+}
+
+.fit-image img {
+  width: 107px;
+  height: 126px;
 }
 /*# sourceMappingURL=page6.css.map */

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/page7.css">
     <link rel="stylesheet" href="./css/page9.css">
     <link rel="stylesheet" href="./css/page10.css">
+    <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Product Details</title>
 </head>
@@ -18,11 +19,11 @@
             <section class="header__lang">
                 <section class="header__lang--item">
                     <span>EN</span>
-                    <select name="" id=""></select>
+                    <select name="" id="" class="selectEN"></select>
                 </section>
                 <section class="header__lang--item">
                     <span>USD</span>
-                    <select name="" id=""></select>
+                    <select name="" id="" class="selectUSD"></select>
                 </section>
             </section>
             <section class="header__account">
@@ -46,8 +47,52 @@
         </section>
         <section class="links">
             <nav class="links__nav">
-                <ul class="links__nav--links">
-                    <li><a href="./index.html">Home</a></li>
+                <div class="links__nav__burger">
+                    <label id="toggler">
+                        <input type="checkbox">
+                        <i class="fas fa-bars"></i>
+                    </label>
+                </div>
+                <ul id="parent_nav" class="links__nav--links">
+                    <li class="home"><a href="./index.html">Home</a>
+                        <label id="home_toggler">
+                            <input type="checkbox">
+                            <i id="arrow" class="fas fa-chevron-down"></i>
+                        </label>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="lititle">Category</li>
+                                <li> <a href="">AirPort & Wireless</a></li>
+                                <li><a href="">AppleCare</a></li>
+                                <li><a href="">Bags, Shells & Sleeves</a></li>
+                                <li><a href="">Business & Security</a></li>
+                                <li><a href="">Cables & Docks</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">Camera & Video</a></li>
+                                <li><a href="">Car & Travel</a></li>
+                                <li><a href="">Cases & Films</a></li>
+                            </ul>
+                            <ul>
+                                <li class="lititle">Category</a></li>
+                                <li><a href="">Changing Devices</a></li>
+                                <li><a href="">Connected Home</a></li>
+                                <li><a href="">Device Care</a></li>
+                                <li><a href="">Display and Graphic</a></li>
+                                <li><a href="">Fitness & Sport</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="">Headphones</a></li>
+                                <li><a href="">HealthKit</a></li>
+                            </ul>
+                            <ul>
+                                <li class="lititle">Category</li>
+                                <li><a href="">Mice & Keyboards</a></li>
+                                <li><a href="">Music Creation</a></li>
+                                <li><a href="">Networking & Server</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="">Store</a></li>
                     <li><a href="">Iphone</a></li>
                     <li><a href="">ipad</a></li>
@@ -249,8 +294,8 @@
             
             <section class="related-products">
                 <h2 class="related-products-title">RELATED PRODUCTS</h2>
-                <div class="bs-category-gallery--one">
-                <div class="bs-category-gallery--one--box">
+                <div class="bs-category-gallery--one resposegallery">
+                <div class="bs-category-gallery--one--box left1">
                     <div class="bs-category-gallery--one--box--image">
                         <img src="./Frontend-final-exercise/50061505_575246.png" alt="" >
                         <div class="bs-category-gallery--one--box--image--overlay">
@@ -272,7 +317,7 @@
                     </div>
                 </div>
 
-                    <div class="bs-category-gallery--one--box">
+                    <div class="bs-category-gallery--one--box left2">
                         <div class="bs-category-gallery--one--box--image">
                             <img src="./Frontend-final-exercise/50061505_575246.png" alt="" >
                             <div class="bs-category-gallery--one--box--image--overlay">
@@ -293,7 +338,7 @@
                             <p class="bs-category-gallery--one--box--price--disabled">$599</p>
                         </div>
                     </div>
-                    <div class="bs-category-gallery--one--box">
+                    <div class="bs-category-gallery--one--box right1">
                         <div class="bs-category-gallery--one--box--image">
                             <img src="./Frontend-final-exercise/50061505_575246.png" alt="" >
                             <div class="bs-category-gallery--one--box--image--overlay">
@@ -314,7 +359,7 @@
                             <p class="bs-category-gallery--one--box--price--disabled">$599</p>
                         </div>
                     </div>
-                    <div class="bs-category-gallery--one--box">
+                    <div class="bs-category-gallery--one--box right2">
                         <div class="bs-category-gallery--one--box--image">
                             <img src="./Frontend-final-exercise/50061505_575246.png" alt="" >
                             <div class="bs-category-gallery--one--box--image--overlay">
@@ -342,97 +387,100 @@
 
 
   
-    <footer class="foot">
-        <div class="container">
-        <section class="foot-sec1">
-            <div class="foot-sec1-rakuinfo">
-                <h3 class="foot-sec1-rakuinfo-h3">RAKUTECH</h3>
-                <p class="foot-sec1-rakuinfo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Dolore et voluptatum natus provident explicabo inventore,
-                    incidunt sapiente temporibus eius atque! Corporis excepturi
-                    nihil minima mollitia! Eveniet pariatur vitae ipsum earum!</p>
-            </div>
-            <div class="foot-sec1-follow">
-                <h5 class="foot-sec1-follow-h5">Follow Us</h5>
-                <p class="foot-sec1-follow-p">Since the 1500s, when an unknown printer took a gallery of type and scrambled.</p>
-                <div class="foot-sec1-fticons">
-                    <i class="fab fa-facebook-f foot-sec1-fticons-fb"></i>
-                    <i class="fab fa-twitter foot-sec1-fticons-twit"></i>
-                </div>
-            </div>
-            <div class="foot-sec1-contact">
-                <h5 class="foot-sec1-contact-h5">Contact Us</h5>
-                <p class="foot-sec1-contact-p">My company, 4578 Marmora Road, Glasgow
-                   <span>D04 89GR</span> 
-                   <span> Call us now: 0123-456-789</span>
-                   <span>Email:support@whatever.com</span> 
-                </p>
-            </div>
-        </section>
-    </div>
-        <hr>
-        <div class="container">
-        <section class="foot-sec2">
-            <div class="foot-sec2-information">
-                <h5>Information</h5>
-                <p>About Us</p>
-                <p>Information</p>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-            </div>
-            <div class="foot-sec2-services">
-                <h5>Services</h5>
-                <p>About Us</p>
-                <p>Information</p>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-            </div>
-            <div class="foot-sec2-extras">
-                <h5>Extras</h5>
-                <p>About Us</p>
-                <p>Information</p>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-            </div>
-            <div class="foot-sec2-myaccount">
-                <h5>My Account</h5>
-                <p>About Us</p>
-                <p>Information</p>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-            </div>
-            <div class="foot-sec2-usefullinks">
-                <h5>Useful Links</h5>
-                <p>About Us</p>
-                <p>Information</p>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-            </div>
-            <div class="foot-sec2-ouroffers">
-                <h5>Our Offers</h5>
-                <p>About Us</p>
-                <p>Information</p>
-                <p>Privacy Policy</p>
-                <p>Terms & Conditions</p>
-            </div>
-        </section>
-      
-        </div>
+        <footer class="foot">
             <hr>
             <div class="container">
-                <section class="foot-sec3">
+                <section class="foot-sec1 resfoot1">
+                    <div class="foot-sec1-rakuinfo resfootcenter">
+                        <h3 class="foot-sec1-rakuinfo-h3">RAKUTECH</h3>
+                        <p class="foot-sec1-rakuinfo-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolore et voluptatum natus provident explicabo inventore,
+                            incidunt sapiente temporibus eius atque! Corporis excepturi
+                            nihil minima mollitia! Eveniet pariatur vitae ipsum earum!</p>
+                    </div>
+                    <div class="foot-sec1-follow resfootcenter">
+                        <h5 class="foot-sec1-follow-h5">Follow Us</h5>
+                        <p class="foot-sec1-follow-p">Since the 1500s, when an unknown printer took a gallery of type and
+                            scrambled.</p>
+                        <div class="foot-sec1-fticons">
+                            <i class="fab fa-facebook-f foot-sec1-fticons-fb"></i>
+                            <i class="fab fa-twitter foot-sec1-fticons-twit"></i>
+                        </div>
+                    </div>
+                    <div class="foot-sec1-contact resfootcenter">
+                        <h5 class="foot-sec1-contact-h5">Contact Us</h5>
+                        <p class="foot-sec1-contact-p">My company, 4578 Marmora Road, Glasgow
+                            <span>D04 89GR</span>
+                            <span> Call us now: 0123-456-789</span>
+                            <span>Email:support@whatever.com</span>
+                        </p>
+                    </div>
+                </section>
+                <hr>
+            </div>
+            <div class="container">
+                <section class="foot-sec2 resfoot2">
+                    <div class="foot-sec2-information">
+                        <h5>Information</h5>
+                        <p>About Us</p>
+                        <p>Information</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="foot-sec2-services">
+                        <h5>Services</h5>
+                        <p>About Us</p>
+                        <p>Information</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="foot-sec2-extras">
+                        <h5>Extras</h5>
+                        <p>About Us</p>
+                        <p>Information</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="foot-sec2-myaccount">
+                        <h5>My Account</h5>
+                        <p>About Us</p>
+                        <p>Information</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="foot-sec2-usefullinks">
+                        <h5>Useful Links</h5>
+                        <p>About Us</p>
+                        <p>Information</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                    <div class="foot-sec2-ouroffers">
+                        <h5>Our Offers</h5>
+                        <p>About Us</p>
+                        <p>Information</p>
+                        <p>Privacy Policy</p>
+                        <p>Terms & Conditions</p>
+                    </div>
+                </section>
+            </div>
+            <hr>
+            <div class="container">
+                <section class="foot-sec3 resfoot3">
                     <span class="foot-sec3-copyright">© 2018 Ecommerce theme by www.bisenbaev.com</span>
                     <figure class="foot-sec3-paymentIcon">
-                    <img src="./Frontend-final-exercise/Western-union.png" alt="">
-                    <img src="./Frontend-final-exercise/Group 19.png" alt="">
-                    <img src="./Frontend-final-exercise/Paypal.png" alt="">
-                    <img src="./Frontend-final-exercise/visa.jpg" alt="">
+                        <img src="/Frontend-final-exercise/Western-union.png" alt="">
+                        <img src="/Frontend-final-exercise/Group 19.png" alt="">
+                        <img src="/Frontend-final-exercise/Paypal.png" alt="">
+                        <img src="/Frontend-final-exercise/visa.jpg" alt="">
                     </figure>
                 </section>
-            </div>  
+            </div>
         </footer>
 
     <!-- <script src="./css/sample.js"></script> -->
+    <script src="./js/nav.js"></script>
     <script src="./js/productDetails.js"></script>
+
 </body>
 </html>

@@ -17,6 +17,7 @@ submit.addEventListener('click', function(){
     const infoJSON = JSON.stringify(info);
 
     console.log(infoJSON);
+    
 
 })
 
