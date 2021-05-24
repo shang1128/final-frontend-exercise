@@ -476,6 +476,9 @@ XS <576 */
 
     .banner__mini {
         flex-direction: column;
+        top: 0;
+        position: static;
+        margin-top: -5px;
     }
 
     .banner__mini h1 {
@@ -609,10 +612,6 @@ XS <576 */
         margin:0;
     }
 }
-@media screen and (max-width: 600px) {
-    
-}
-
 
 @media screen and (max-width: 576px) {
     .input-search--inputs {
