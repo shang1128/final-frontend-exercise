@@ -24,7 +24,6 @@
   margin: 20px 0;
   font-size: 9pt;
 }
-
 .signingup:focus {
   outline: none;
 }
@@ -59,7 +58,6 @@
 .conpass {
   position: relative;
 }
-
 .conpass i {
   position: absolute;
   top: 43px;
@@ -86,5 +84,4 @@
   width: 274px;
   text-align: center;
   font-size: 9pt;
-}
-/*# sourceMappingURL=signup.css.map */
+}/*# sourceMappingURL=signup.css.map */

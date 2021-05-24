@@ -7,6 +7,9 @@ let totalAmount = document.querySelector('.total-price');
 let deleteOrder = document.querySelectorAll('.items-list__item--name__delete');
 let deleteItems = document.querySelectorAll('.items-list__item');
 
+
+
+
 let counter = new Array(quantityValue.length); 
 let total=0;
 counter.fill(0); 
@@ -45,5 +48,3 @@ for(let i = 0; i<=incrementButton.length;i++){
 function calculateOrder(c, srp){
     return c * srp;
 }
-
-
