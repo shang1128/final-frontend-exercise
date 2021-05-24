@@ -8,7 +8,10 @@ XS <576 */
     .container {
         width: 1080px;
     }
-
+    .bg-images{
+        height: auto;
+        padding-top: 50px;
+    }
     .content-container {
         width: 992px;
     }
